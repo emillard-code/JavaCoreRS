@@ -1,15 +1,16 @@
 package com.project;
 
-import static org.junit.Assert.assertTrue;
-
 import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
 
 public class MainTest {
 
     @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+    public void testReverseString() {
+
+        Assertions.assertEquals("!dlroW olleH", Main.reverseString("Hello World!"));
+        Assertions.assertEquals(".edoc avaJ gnitseT", Main.reverseString("Testing Java code."));
+
     }
 
 }
